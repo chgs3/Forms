@@ -1,0 +1,158 @@
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">
+            Formulário de Pesquisa para Lolzeiros
+        </h1>
+        <p id="description" class="description text-center">
+            Obrigado por pausar a fila ranqueada e responder este questionário!
+        </p>
+    </header>
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <form id="form-pesquisa">
+
+        <div class="form-lol">
+            <label id="name-label" for="name">Nome</label>
+            <input
+                type="text"
+                name="nome"
+                id="name"
+                class="form-control"
+                placeholder="Escreva o seu nome"
+                required
+            />
+        </div>
+
+        <div class="form-lol">
+            <label id="email-label" for="email">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+            />
+        </div>
+
+        <div class="form-lol">
+            <label id="number-label" for="number">Idade<span class="clue">(Opcional)</span></label>
+            <input
+                type="number"
+                name="idade"
+                id="number"
+                min="10"
+                max="99"
+                class="form-lol"
+                placeholder="Idade"
+            />
+        </div>
+
+        <div class="form-lol">
+            <p>Qual a sua lane principal?</p>
+            <select id="dropdown" name="role" class="form-lol" required>
+                <option disabled selected value>Selecione a sua lane</option>
+                <option value="top">Rota Superior</option>
+                <option value="jungle">Rota da Selva</option>
+                <option value="mid">Rota do Meio</option>
+                <option value="adc">Rota Inferior (Ad-carry)</option>
+                <option value="sup">Rota Inferior (Suporte)</option>
+            </select>
+        </div>
+
+        <div class="form-lol">
+            <p>Qual a sua lane secundária?</p>
+            <select id="dropdown" name="role" class="form-lol" required>
+                <option disabled selected value>Selecione a sua lane secundária</option>
+                <option value="top">Rota Superior</option>
+                <option value="jungle">Rota da Selva</option>
+                <option value="mid">Rota do Meio</option>
+                <option value="adc">Rota Inferior (Ad-carry)</option>
+                <option value="sup">Rota Inferior (Suporte)</option>
+            </select>
+        </div>
+
+        <div class="form-lol">
+            <p>Qual o seu elo peak?</p>
+            <select id="dropdown" name="role" class="form-lol" required>
+                <option disabled selected value>Selecione o seu elo peak</option>
+                <option value="top">Ferro IV - Prata I</option>
+                <option value="jungle">Ouro IV - Platina I</option>
+                <option value="mid">Diamante IV - Diamante I</option>
+                <option value="adc">Mestre, Grão Mestre ou Desafiante</option>
+            </select>
+        </div>
+
+        <div class="form-lol">
+            <p>Você gostaria de melhorar a sua gameplay em algum aspecto?</p>
+            <label>
+                <input
+                    name="improve-gameplay"
+                    value="definitivamente"
+                    type="radio"
+                    class="input-radio"
+                /> Definitivamente </label>
+
+            <label>
+                <input
+                    name="improve-gameplay"
+                    value="nao"
+                    type="radio"
+                    class="input-radio"
+                /> Não </label>
+
+            <label>
+                <input
+                    name="improve-gameplay"
+                    value="incerto"
+                    type="radio"
+                    class="input-radio"
+                /> Não tenho certeza </label>
+        </div>       
+
+        <div class="form-lol">
+            <p> O que você gostaria de melhorar? </p>
+
+            <label>
+                <input
+                    name="prefer"
+                    value="macrogame"
+                    type="checkbox"
+                    class="input-checkbox"
+                /> Macro-Game </label>
+
+            <label>
+                <input
+                    name="prefer"
+                    value="microgame"
+                    type="checkbox"
+                    class="input-checkbox"
+                /> Micro-Game </label>
+
+            <label>
+                <input
+                    name="prefer"
+                    value="matchups"
+                    type="checkbox"
+                    class="input-checkbox"
+                /> Matchups específicas na sua lane </label>
+        </div>
+
+        <div class="form-lol">
+            <p> Algum comentário adicional? </p>
+            <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Deixe aqui o seu comentário..."
+            ></textarea>
+        </div>
+
+        <div class="form-lol">
+            <button type="submit" id="submit" class="submit=button">
+                Enviar
+            </button>
+        </div>
+    </form>
+</div>
